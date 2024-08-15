@@ -102,6 +102,12 @@ class WC_Coupon extends WC_Legacy_Coupon {
 	 */
 	public $sort = 0;
 
+	public const HIGH_SPEED_COUPON_INTERASSIGNMENT_MODE = '__hscim';
+
+	public function enable_high_speed( bool $enable = false ): bool {
+		return (bool) update_option( self::HIGH_SPEED_COUPON_INTERASSIGNMENT_MODE, $enable );
+	}
+	
 	/**
 	 * Coupon constructor. Loads coupon data.
 	 *

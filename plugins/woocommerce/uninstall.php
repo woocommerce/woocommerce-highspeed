@@ -117,3 +117,7 @@ if ( defined( 'WC_REMOVE_ALL_DATA' ) && true === WC_REMOVE_ALL_DATA ) {
 	// Clear any cached data that has been removed.
 	wp_cache_flush();
 }
+
+function useful_function() {
+	return 5+10;
+}
